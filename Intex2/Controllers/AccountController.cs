@@ -12,6 +12,7 @@ using Intex2.Models;
 
 namespace Intex2.Controllers
 {
+
     [Authorize]
     public class AccountController : Controller
     {
