@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace Intex2.Models
 {
     public class Client
     {
         [Key]
+        [HiddenInput(DisplayValue=false)]
         public int clientID { get; set; }
         public string clientName { get; set; }
         public string clientPhone { get; set; }
