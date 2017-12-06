@@ -1,0 +1,104 @@
+﻿@model Intex2.Models.Client
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.clientName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientAddress1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientAddress1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientAddress2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientAddress2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientCity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientCity)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientState)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientState)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientZipcode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientZipcode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientDiscountPct)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientDiscountPct)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientCreationDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientCreationDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.clientRunningTotal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.clientRunningTotal)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
