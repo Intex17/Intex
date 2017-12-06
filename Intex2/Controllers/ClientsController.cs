@@ -21,6 +21,13 @@ namespace Intex2.Controllers
             return View(db.Clients.ToList());
         }
 
+        public ActionResult ClientHome()
+        {
+
+            ViewBag.percent = 50;
+            return View();
+        }
+
         // GET: Clients/Details/5
         public ActionResult Details(int? id)
         {
