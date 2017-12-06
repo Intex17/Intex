@@ -204,6 +204,7 @@
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\ClientLink.cs" />
     <Compile Include="Models\Customer_Assay.cs" />
+    <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\NewRegister.cs" />

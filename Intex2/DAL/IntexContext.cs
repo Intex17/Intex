@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using Intex2.Models;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Intex2.DAL
 {
@@ -24,6 +25,12 @@ namespace Intex2.DAL
         public DbSet<Sample> Sample { get; set; }
         public DbSet<Tasks> Task { get; set; }
         public DbSet<Test_Tube> Test_Tube { get; set; }
+        public DbSet<Employee> Employee { get; set; }
+
+        protected override void OnModelCreating(System.Data.Entity.DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
 
     }
 }
