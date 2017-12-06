@@ -22,7 +22,7 @@ namespace Intex2.DAL
         public DbSet<Customer_Assay> Customer_Assay { get; set; }
         public DbSet<Order> Order { get; set; }
         public DbSet<Sample> Sample { get; set; }
-        public DbSet<Task> Task { get; set; }
+        public DbSet<Tasks> Task { get; set; }
         public DbSet<Test_Tube> Test_Tube { get; set; }
 
     }

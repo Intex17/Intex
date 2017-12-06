@@ -15,7 +15,7 @@ namespace Intex2.Models
         public Customer_Assay Customer_Assay { get; set; }
         public Order Order { get; set; }
         public Sample Sample { get; set; }
-        public Task Task { get; set; }
+        public Tasks Tasks { get; set; }
         public Test_Tube Test_Tube { get; set; }
     }
 }

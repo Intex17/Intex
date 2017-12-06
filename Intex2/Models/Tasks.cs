@@ -8,7 +8,7 @@ using System.Web;
 namespace Intex2.Models
 {
     [Table("Task")]
-    public class Task
+    public class Tasks
     {
         [Key]
         public int taskID { get; set; }
