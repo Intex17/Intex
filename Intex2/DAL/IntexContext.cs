@@ -16,5 +16,6 @@ namespace Intex2.DAL
 
         public DbSet<Client> Clients { get; set; }
         public DbSet<Representative> Representative { get; set; }
+        public DbSet<NewRegister> NewRegisters { get; set; }
     }
 }

@@ -13,9 +13,9 @@ namespace Intex2.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult FAQ()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Wow.";
 
             return View();
         }
