@@ -18,7 +18,6 @@ namespace Intex2.Models
         public string clientState { get; set; }
         public string clientZipcode { get; set; }
         public decimal clientDiscountPct { get; set; }
-        public string clientCreationDate { get; set; }
         public decimal clientRunningTotal { get; set; }
     }
 }
