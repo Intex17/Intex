@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Intex2.Models.Client>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.clientName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientAddress1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientAddress2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientCity)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientState)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientZipcode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientDiscountPct)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientCreationDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.clientRunningTotal)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientAddress1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientAddress2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientCity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientState)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientZipcode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientDiscountPct)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientCreationDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.clientRunningTotal)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.clientID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.clientID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.clientID })
+        </td>
+    </tr>
+}
+
+</table>
